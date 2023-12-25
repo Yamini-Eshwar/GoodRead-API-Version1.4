@@ -1,0 +1,36 @@
+GET http://localhost:3000/books/
+
+###
+
+GET http://localhost:3000/books/40/
+
+###
+
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+  "title": "Harry Potter and the Phoenix",
+  "authorId": 1,
+  "rating": 4.62,
+  "description": "There is a door at the end of a silent corridor.",
+  "pages": 352,
+  "price": 850
+}
+
+###
+
+PUT http://localhost:3000/books/5/
+Content-Type: application/json
+
+{
+  "rating": 4
+}
+
+###
+
+DELETE http://localhost:3000/books/5/
+
+###
+
+GET http://localhost:3000/authors/1/books/
